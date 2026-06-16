@@ -124,7 +124,24 @@ Nombre: ${guestName || "_____"}`;
             <CountdownBox value={timeLeft.minutos} label="Min" />
             <CountdownBox value={timeLeft.segundos} label="Seg" />
           </div>
+<div className="mt-10 rounded-[2rem] bg-white p-6 text-center shadow-soft">
 
+  <p className="text-sm uppercase tracking-[0.35em] text-chivasRed">
+    Himno del Guadalajara
+  </p>
+
+  <h3 className="mt-3 text-2xl font-semibold text-chivasBlue">
+    Reproducir Himno
+  </h3>
+
+  <audio
+    controls
+    className="mt-6 w-full"
+  >
+    <source src="/himno-chivas.mp3" type="audio/mpeg" />
+  </audio>
+
+</div>
           <div className="mt-10 rounded-[2rem] bg-chivasBlue p-6 text-center text-cream shadow-soft">
             <Trophy className="mx-auto mb-4 h-8 w-8 text-gold" />
 
